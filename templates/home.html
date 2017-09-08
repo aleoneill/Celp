@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+body {
+  text-align: center;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+p {
+    color: black;
+    text-align: center;
+}
+.jumbotron {
+    margin-bottom: 0px;
+    height: 950px;
+    width: 1900px;
+    background-image: url(/static/home.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div {
+        width: 750px;
+        overflow: auto;
+        padding: 20px 30px;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+</style>
+<div class="jumbotron">
+  <div><h1>Celp!</h1>      
+  <p> * Mission Statement: Choosing a college can be tough. Celp's mission is to connect students and their dream schools; 
+alongside having current students share their experiences, our website provides perspective, and we push to enrich 
+their stay at the college they will soon attend. Despite the other college reviews sites, 
+Celp brings honest reviews from current students and alumni based on the college of the users choosing</p></div>
+  <br><br><br>
+  <form action='/' method="post" >
+     <select style="width:30%;align:center;" name='college'>
+      <option value="CSU Monterey Bay">California State University, Monterey Bay</option>
+      <option value="San Jose State">San Jose State University</option>
+      <option value="San Diego State">San Diego State University</option>
+      <option value="UC Berkeley">University of California, Berkeley</option>
+      <option value="UC Davis">University of California, Davis</option>
+      <option value="UC Irvine">University of California, Irvine</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+<br><br><br><br><br><br><br>
+</html>

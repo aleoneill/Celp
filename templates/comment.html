@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+h1 {
+    color: black;
+    text-align: left;
+}
+p {
+    color: black;
+    text-align: left;
+}
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(/static/form.png);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+textarea {
+    max-width: 30%;
+    max-height: 50%;
+}
+
+input {
+    max-width: 30%;
+}
+
+</style>
+<div class="jumbotron">
+<form method='post' action = '/comment' enctype="multipart/form-data">
+  Profile Image: <input type="file" name='image' accept="image/*" capture="camera" /><br>
+  Name: <input type='text' name='name' id='name' placeholder="First, Last"/><br><br>
+
+  Email: <input type='text' name='email' id='email' /><br><br>
+
+  Experience/Comment(s):<br>
+  <textarea class="form-control" name='comment' id='comment' rows="5"></textarea><br><br>
+
+  <input type='submit' value='Submit' />
+</form>
+</div>
+<br><br><br><br><br><br><br>
+</html>
